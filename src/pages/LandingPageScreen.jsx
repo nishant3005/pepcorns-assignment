@@ -445,6 +445,168 @@ const LandingPageScreen = () => {
           </div>
         </div>
       </section>
+
+      {/* about supersapiens  */}
+      <section className="mx-32 px-8 pt-12 mb-8">
+        <div>
+          <div className="text-[#666] font-extrabold text-3xl">
+            About Supersapiens
+          </div>
+          <div className="border border-[#E6E6E6] w-14 my-6"></div>
+        </div>
+
+        <div className="flex justify-between">
+          <div className="flex flex-col">
+            <div>
+              <div className="text-[#777] font-normal text-base">
+                Legal Name
+              </div>
+              <div className="text-lg mb-4">TT1 Products, Inc.</div>
+            </div>
+            <div>
+              <div className="text-[#777] font-normal text-base">Founded</div>
+              <div className="text-lg mb-4">Feb 2019</div>
+            </div>
+            <div>
+              <div className="text-[#777] font-normal text-base">Form</div>
+              <div className="text-lg mb-4">Delaware Corporation</div>
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <div>
+              <div className="text-[#777] font-normal text-base">Employees</div>
+              <div className="text-lg mb-4">12</div>
+            </div>
+            <div>
+              <div className="text-[#777] font-normal text-base">Website</div>
+              <div className="mb-4">
+                <a
+                  href="https://www.supersapiens.com/"
+                  className="text-lg  text-[#0049ff]"
+                >
+                  supersapiens.com
+                </a>
+              </div>
+            </div>
+            <div>
+              <div className="text-[#777] font-normal text-base">
+                Social Media
+              </div>
+              <div className="text-lg mb-4">
+                <div className="flex">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* faq */}
+      <section className="mx-32 px-8 pt-12 mb-8">
+        <div>
+          <div className="text-[#666] font-extrabold text-3xl">FAQ</div>
+          <div className="border border-[#E6E6E6] w-14 my-6"></div>
+        </div>
+
+        <div className="">
+          <div className="">
+            <div>What am I investing in? </div>
+            <div>
+              What am I investing in? What am I investing in? TT1 Products, Inc
+              (dba Supersapiens) is offering a Crowd Convertible Promissory Note
+              (“Convertible Note”) to investors (“Holders”) with the following
+              terms: Maturity date: May 1, 2025 20% Discount Simple interest of
+              6% per annum $120M valuation cap This Convertible Note being
+              offered is a form of debt that may convert into equity securities
+              when a Qualified Financing (as defined in the offering documents)
+              occurs. Likewise, in the event the Convertible Note remains
+              outstanding on the Maturity Date (May 1, 2025), then the
+              outstanding balance of the note and any unpaid accrued interest
+              shall automatically convert into shares of the Issuer’s Common
+              Stock (as defined in the offering documents). The holder of the
+              Convertible Note loans money to the company; however, instead of
+              getting cash returns in the form of principal plus interest, the
+              holder will receive common stock in the company upon conversion or
+              a subsequent equity financing event. For this offering, it is
+              important to understand that while interest is accrued, cash
+              payments will not be made to Convertible Note holders. What is the
+              Maturity Date on the
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* discussion */}
+      <section className="mx-32 px-8 pt-12 mb-8">
+        <div>
+          <div className="text-[#666] font-extrabold text-3xl">Discussion</div>
+          <div className="border border-[#E6E6E6] w-14 my-6"></div>
+        </div>
+
+        <div>
+          Ask questions and share feedback with the Supersapiens team below. If
+          you have support related questions for Republic, please contact
+          investors@republic.co.
+        </div>
+        <div className="text-3xl">discussion card</div>
+      </section>
+
+      {/* footer */}
+      <section className="bg-[#161D2D]">
+        <div className="px-40 pt-12 pb-8 flex justify-between">
+          <div className="text-[#fff] flex flex-col">
+            <div>Republic Logo</div>
+            <div className="my-6 font-normal text-base leading-snug text-[#B9BCC0]">
+              Giving everyone access to early-stage startup investing
+            </div>
+          </div>
+          <div className="text-[#fff] font-medium text-lg">
+            <div className="mb-3 pb-3 border-b opacity-30">For investors</div>
+            <ul className="text-[#B9BCC0]">
+              <li className="leading-7">Why invest</li>
+              <li className="leading-7">How it works</li>
+              <li className="leading-7">FAQ</li>
+              <li className="leading-7">Risks</li>
+              <li className="leading-7">Privacy policy</li>
+              <li className="leading-7">Accessibility</li>
+              <li className="leading-7">Cookie Preferences</li>
+              <li className="leading-7">Form CRS</li>
+            </ul>
+          </div>
+          <div className="text-[#fff] font-medium text-lg">
+            <div className="mb-3 pb-3 border-b opacity-30">For startups</div>
+            <ul className="text-[#B9BCC0]">
+              <li className="leading-7">Why raise</li>
+              <li className="leading-7">Learn</li>
+              <li className="leading-7">FAQ</li>
+              <li className="leading-7">Crowd SAFE</li>
+              <li className="leading-7">Instruments</li>
+              <li className="leading-7">Tokenized assets</li>
+            </ul>
+          </div>
+          <div className="text-[#fff] font-medium text-lg">
+            <div className="mb-3 pb-3 border-b opacity-30">Crypto</div>
+            <ul className="text-[#B9BCC0]">
+              <li className="leading-7">For investors</li>
+              <li className="leading-7">For companies</li>
+              <li className="leading-7">How it works</li>
+              <li className="leading-7">Token DPA</li>
+              <li className="leading-7">Tokenization</li>
+            </ul>
+          </div>
+          <div className="text-[#fff] font-medium text-lg">
+            <div className="mb-3 pb-3 border-b opacity-30">Company</div>
+            <ul className="text-[#B9BCC0]">
+              <li className="leading-7">About</li>
+              <li className="leading-7">Journal</li>
+              <li className="leading-7">Events</li>
+              <li className="leading-7">Contact</li>
+              <li className="leading-7">We&apos;re hiring!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

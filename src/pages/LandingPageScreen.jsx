@@ -1,37 +1,48 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faTwitter,
+  faDiscord,
+  faSquareFacebook,
+  faYoutube,
+  faInstagram,
+  faLinkedin,
+} from '@fortawesome/free-brands-svg-icons';
 import { tagItems } from '../constants/tagItems';
 import TagItem from '../components/ui/TagItem/TagItem';
 import Carousel from '../components/carousel/Carousel';
 import { founders } from '../constants/leadership';
 import Card from '../components/ui/card/Card';
+import { discussion } from '../constants/discussion';
+import DiscussionCard from '../components/ui/discusssion-card/DiscussionCard';
+import FAQ from '../components/ui/faq/FAQ';
 
 const LandingPageScreen = () => {
   return (
     <div className="text-justify">
       {/* Hero section */}
       <section className="mx-32 px-8 pt-20 pb-12">
-        <div className="flex justify-between">
+        <div className="">
           <div>
             <div className="flex">
-              <div>logo</div>
-              <div className="text-[50px] font-bold">Supersapiens</div>
+              <div className="flex justify-center items-center">LOGO</div>
+              <div className="text-[50px] font-bold pl-2">Supersapiens</div>
             </div>
-            <div className="text-[#777] text-xl">
+            <div className="text-[#777] text-xl pb-4">
               Glucose: The Cornerstone of Metabolic Health
             </div>
-            <div className="flex">
+            <div className="flex flex-wrap">
               {tagItems.map((item) => (
                 <TagItem key="" item={item} />
               ))}
             </div>
           </div>
-          <div>2</div>
         </div>
-        <div className="flex justify-between">
-          <div>
+        <div className="flex justify-between md:flex-wrap">
+          <div className="lg:w-2/3 md:w-full pr-10">
             <Carousel />
           </div>
-          <div className="flex flex-col w-1/3">
+          <div className="flex flex-col justify-center lg:w-1/3 md:w-full">
             <div className="mb-5">
               <div className="text-[35px] font-black mb-2 mt-6">$304,857</div>
               <div className="text-[#777] font-normal text-lg">
@@ -85,7 +96,7 @@ const LandingPageScreen = () => {
       <div className="border border-[#E6E6E6]"></div>
 
       {/* pitch */}
-      <section className="mx-32 px-8 pt-12 mb-8 flex">
+      <section className="mx-32 px-8 pt-12 mb-8">
         <div>
           <div className="text-[#666] font-extrabold text-3xl">Highlights</div>
           <div className="border border-[#E6E6E6] w-14 my-6"></div>
@@ -118,10 +129,6 @@ const LandingPageScreen = () => {
             </ul>
           </div>
         </div>
-        <div>
-          <div className="text-[#666] font-extrabold text-3xl">Deal terms</div>
-          <div className="border border-[#E6E6E6] w-14 my-6"></div>
-        </div>
       </section>
 
       {/* problem */}
@@ -130,8 +137,8 @@ const LandingPageScreen = () => {
           <div className="text-[#666] font-extrabold text-3xl">Opportunity</div>
           <div className="border border-[#E6E6E6] w-14 my-6"></div>
         </div>
-        <div className="flex justify-between">
-          <div>
+        <div className="flex justify-between flex-wrap">
+          <div className="lg:w-1/2 md:w-full">
             <div className="text-2xl font-extrabold mb-2">
               Glucose: The Cornerstone of Health
             </div>
@@ -161,12 +168,8 @@ const LandingPageScreen = () => {
               <span className="text-blue-500 cursor-pointer">read more...</span>
             </div>
           </div>
-          <div>
-            <img
-              src="../assets/problem.png"
-              alt="image"
-              className="W-100 h-100"
-            />
+          <div className="lg:w-1/2 md:w-full flex justify-center items-center">
+            <img src="/assets/problem.png" alt="image" />
           </div>
         </div>
       </section>
@@ -183,17 +186,17 @@ const LandingPageScreen = () => {
               Supersapiens: next-gen insights empowering diabetes management
             </div>
             <div className="text-[#666] font-bold text-lg">Our System</div>
-            <div className="flex justify-around">
-              <div>
+            <div className="flex justify-betwen flex-wrap py-16">
+              <div className="lg:w-3/5 md:w-full flex justify-center items-center pr-6">
                 <img
-                  src="../assets/problem.png"
+                  src="https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/084/149/84149-1677282201-2d36e32b31860fdea2c46af84eca3209c854ca9d.jpg"
                   alt="image"
                   className="W-100 h-100"
                 />
               </div>
-              <div>
+              <div className="lg:w-2/5 md:w-full flex justify-center items-center">
                 <img
-                  src="../assets/problem.png"
+                  src="https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/102/394/102394-1697740633-9496edeaf7d890ff3e575cc623c67ce7b4a0bf60.png"
                   alt="image"
                   className="W-100 h-100"
                 />
@@ -270,25 +273,23 @@ const LandingPageScreen = () => {
           <div className="text-[#666] font-extrabold text-3xl">Traction</div>
           <div className="border border-[#E6E6E6] w-14 my-6"></div>
         </div>
-        <div className="">
+        <div className="mt-16">
           <div className="text-center text-5xl font-extrabold">
             <span className="text-[#555] font-semibold">$2M</span> 2022 EU
             revenue <span className="text-[#555] font-semibold">15k+</span>{' '}
             users
           </div>
-          <div className="flex justify-between">
-            <div>
+          <div className="flex flex-col justify-between items-center">
+            <div className="flex justify-center items-center w-4/5 my-10">
               <img
-                src="../assets/problem.png"
+                src="https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/108/838/108838-1701290596-66c7d5aed74cf13c03652feaef8519e6e7bd6515.png"
                 alt="image"
-                className="W-100 h-100"
               />
             </div>
-            <div>
+            <div className="flex justify-center items-center w-3/4 my-10">
               <img
-                src="../assets/problem.png"
+                src="https://republic.com/cdn-cgi/image/width=680,dpr=2/https://uploads.republic.com/p/images/attachments/original/000/105/480/105480-1699385791-81898449bdddc89f8b62563d56ff67fd081c8b92.png"
                 alt="image"
-                className="W-100 h-100"
               />
             </div>
           </div>
@@ -303,7 +304,7 @@ const LandingPageScreen = () => {
           </div>
           <div className="border border-[#E6E6E6] w-14 my-6"></div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-wrap">
           <div>
             <ul className="list-disc pl-4">
               <li className="leading-6 text-lg mb-3 text-[#222]">
@@ -437,10 +438,12 @@ const LandingPageScreen = () => {
             Led by industry veterans and founders in healthcare, sports, and
             finance
           </div>
-          <div className="text-[#666] font-bold text-xl">Founders</div>
-          <div className="flex justify-between">
-            {founders.map((founder) => (
-              <Card item={founder} key={founder.title} />
+          <div className="text-[#666] font-bold text-xl pb-5">Founders</div>
+          <div className="flex lg:flex-nowrap md:flex-wrap justify-center items-center">
+            {founders.map((member, index) => (
+              <div key={index} className="m-4">
+                <Card {...member} />
+              </div>
             ))}
           </div>
         </div>
@@ -455,7 +458,7 @@ const LandingPageScreen = () => {
           <div className="border border-[#E6E6E6] w-14 my-6"></div>
         </div>
 
-        <div className="flex justify-between">
+        <div className="flex lg:flex-nowrap md:flex-wrap sm:flex-wrap sm:w-full justify-between">
           <div className="flex flex-col">
             <div>
               <div className="text-[#777] font-normal text-base">
@@ -494,9 +497,38 @@ const LandingPageScreen = () => {
               </div>
               <div className="text-lg mb-4">
                 <div className="flex">
-                  <div></div>
+                  <div className="mr-2 text-blue-500 cursor-pointer">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </div>
+                  <div className="mx-2 text-pink-500 cursor-pointer">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </div>
+                  <div className="mx-2 text-blue-600 cursor-pointer">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </div>
+                  <div className="mx-2 text-blue-500 cursor-pointer">
+                    <FontAwesomeIcon icon={faSquareFacebook} />
+                  </div>
+                  <div className="mx-2 text-red-500 cursor-pointer">
+                    <FontAwesomeIcon icon={faYoutube} />
+                  </div>
+                  <div className="mx-2 text-[#5C6AF3] cursor-pointer">
+                    <FontAwesomeIcon icon={faDiscord} />
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div>
+            <div className="text-[#777] font-normal text-base">
+              Headquarters
+            </div>
+            <div>
+              <img
+                src="https://developers.google.com/static/maps/images/landing/hero_maps_static_api.png"
+                alt=""
+                className="w-50 h-44 object-cover"
+              />
             </div>
           </div>
         </div>
@@ -510,35 +542,12 @@ const LandingPageScreen = () => {
         </div>
 
         <div className="">
-          <div className="">
-            <div>What am I investing in? </div>
-            <div>
-              What am I investing in? What am I investing in? TT1 Products, Inc
-              (dba Supersapiens) is offering a Crowd Convertible Promissory Note
-              (“Convertible Note”) to investors (“Holders”) with the following
-              terms: Maturity date: May 1, 2025 20% Discount Simple interest of
-              6% per annum $120M valuation cap This Convertible Note being
-              offered is a form of debt that may convert into equity securities
-              when a Qualified Financing (as defined in the offering documents)
-              occurs. Likewise, in the event the Convertible Note remains
-              outstanding on the Maturity Date (May 1, 2025), then the
-              outstanding balance of the note and any unpaid accrued interest
-              shall automatically convert into shares of the Issuer’s Common
-              Stock (as defined in the offering documents). The holder of the
-              Convertible Note loans money to the company; however, instead of
-              getting cash returns in the form of principal plus interest, the
-              holder will receive common stock in the company upon conversion or
-              a subsequent equity financing event. For this offering, it is
-              important to understand that while interest is accrued, cash
-              payments will not be made to Convertible Note holders. What is the
-              Maturity Date on the
-            </div>
-          </div>
+          <FAQ />
         </div>
       </section>
 
       {/* discussion */}
-      <section className="mx-32 px-8 pt-12 mb-8">
+      <section className="mx-32 px-8 pt-12 mb-24">
         <div>
           <div className="text-[#666] font-extrabold text-3xl">Discussion</div>
           <div className="border border-[#E6E6E6] w-14 my-6"></div>
@@ -549,7 +558,13 @@ const LandingPageScreen = () => {
           you have support related questions for Republic, please contact
           investors@republic.co.
         </div>
-        <div className="text-3xl">discussion card</div>
+        <div className="flex flex-col justify-center items-center">
+          <div className="w-3/5">
+            {discussion.map((item) => (
+              <DiscussionCard item={item} key={item.name} />
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* footer */}
@@ -559,6 +574,26 @@ const LandingPageScreen = () => {
             <div>Republic Logo</div>
             <div className="my-6 font-normal text-base leading-snug text-[#B9BCC0]">
               Giving everyone access to early-stage startup investing
+            </div>
+            <div className="flex opacity-30 text-xl text-white">
+              <div className="mr-2 cursor-pointer">
+                <FontAwesomeIcon icon={faTwitter} />
+              </div>
+              <div className="mx-2  cursor-pointer">
+                <FontAwesomeIcon icon={faInstagram} />
+              </div>
+              <div className="mx-2 cursor-pointer">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </div>
+              <div className="mx-2  cursor-pointer">
+                <FontAwesomeIcon icon={faSquareFacebook} />
+              </div>
+              <div className="mx-2  cursor-pointer">
+                <FontAwesomeIcon icon={faYoutube} />
+              </div>
+              <div className="mx-2  cursor-pointer">
+                <FontAwesomeIcon icon={faDiscord} />
+              </div>
             </div>
           </div>
           <div className="text-[#fff] font-medium text-lg">

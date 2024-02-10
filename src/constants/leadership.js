@@ -1,25 +1,25 @@
 export const founders = [
   {
-    title: 'CEO & Founder',
+    role: 'CEO & Founder',
     name: 'Phil Southerland',
-    src: '../assets/ceo.png',
-    about:
-      'Phil is an experienced CEO, entrepreneur, public speaker, and global diabetes ambassador. He founded Team Novo Nordisk Pro Cycling Team, and then non-profit Team Type 1 Foundation. The United Nations, WHO, World Bank, and others have recognized Phil for his exyraordinary commitment to improving lives of around the world.',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTviOr2DsEZPA_lE6z4sCLXpw31W62veyMXUg&usqp=CAU',
+    bio: 'Phil is an experienced CEO, entrepreneur, public speaker, and global diabetes ambassador. He founded Team Novo Nordisk Pro Cycling Team, and then non-profit Team Type 1 Foundation. The United Nations, WHO, World Bank, and others have recognized Phil.',
   },
 
   {
-    title: 'CFO & Co-Founder',
+    role: 'CFO & Co-Founder',
     name: 'Jay Robbins',
-    src: '../assets/cfo.png',
-    about:
-      'Jay has over 20 years of experience in finance, accounting, and operations in several different businesses. Before the joined Phil to start Supersapiens, he was a partner with a large CPA firm working with fast growing Private Equity backed companies.',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYH_VDaGfxQ_cPhkgDPyoxXJgnnKHzEw7kdg&usqp=CAU',
+    bio: 'Jay has over 20 years of experience in finance, accounting, and operations in several different businesses. Before the joined Phil to start Supersapiens, he was a partner with a large CPA firm working with fast growing Private Equity backed companies.',
   },
   {
-    title: 'Chief of Staff & Co-Founder',
+    role: 'Chief of Staff & Co-Founder',
     name: 'Fitzalan Crowe',
-    src: '../assets/cos.png',
-    about:
-      'Fitzalan is a seasoned marketing executive with more than 20 years of experience in strategic commmunications, executive posiotioning, public relations, athlete management, and earned media.',
+    image:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqVyiI1XClbT2Ue-7CGVAp8sKoqe_068R9zw&usqp=CAU',
+    bio: 'Fitzalan is a seasoned marketing executive with more than 20 years of experience in strategic commmunications, executive posiotioning, public relations, athlete management, and earned media.',
   },
 ];
 

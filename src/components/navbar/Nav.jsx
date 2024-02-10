@@ -1,4 +1,3 @@
-// Navbar.js
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -30,7 +29,7 @@ const Navbar = () => {
     <>
       <nav className="text-[#1A1A1A] mx-32 px-8 my-4">
         <div className="container mx-auto flex items-center justify-between relative">
-          <div className="font-bold text-xl">Repiblic Logo</div>
+          <div className="font-bold text-xl">Republic Logo</div>
 
           <div className="lg:hidden">
             <button onClick={toggleNavbar} className="focus:outline-none">

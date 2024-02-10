@@ -38,11 +38,11 @@ const LandingPageScreen = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between md:flex-wrap">
-          <div className="lg:w-2/3 md:w-full pr-10">
+        <div className="flex justify-between flex-wrap">
+          <div className="lg:pr-10 w-full lg:w-2/3  p-0">
             <Carousel />
           </div>
-          <div className="flex flex-col justify-center lg:w-1/3 md:w-full">
+          <div className="flex flex-col justify-center w-full lg:w-1/3">
             <div className="mb-5">
               <div className="text-[35px] font-black mb-2 mt-6">$304,857</div>
               <div className="text-[#777] font-normal text-lg">
@@ -569,7 +569,7 @@ const LandingPageScreen = () => {
 
       {/* footer */}
       <section className="bg-[#161D2D]">
-        <div className="px-40 pt-12 pb-8 flex justify-between">
+        <div className="px-40 pt-12 pb-8 flex justify-between flex-wrap">
           <div className="text-[#fff] flex flex-col">
             <div>Republic Logo</div>
             <div className="my-6 font-normal text-base leading-snug text-[#B9BCC0]">
